@@ -1,0 +1,34 @@
+{
+  "name": "postcss-hsl-color-function",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to transform HSL color function to more compatible CSS.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "HSL",
+    "color function"
+  ],
+  "author": "Leopoldthecoder <Leopoldthecuber@gmail.com>",
+  "license": "MIT",
+  "repository": "leopoldthecoder/postcss-hsl-color-function",
+  "bugs": {
+    "url": "https://github.com/leopoldthecoder/postcss-hsl-color-function/issues"
+  },
+  "homepage": "https://github.com/leopoldthecoder/postcss-hsl-color-function",
+  "dependencies": {
+    "balanced-match": "^0.4.2",
+    "color": "^1.0.3",
+    "eslint-config-doran": "^1.0.3",
+    "postcss": "^5.2.6",
+    "postcss-message-helpers": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "jest": "^18.0.0"
+  },
+  "scripts": {
+    "lint": "node_modules/.bin/eslint *.js",
+    "test": "jest"
+  }
+}
