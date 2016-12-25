@@ -16,15 +16,16 @@
     "url": "https://github.com/leopoldthecoder/postcss-hsl-color-function/issues"
   },
   "homepage": "https://github.com/leopoldthecoder/postcss-hsl-color-function",
+  "main": "index.js",
   "dependencies": {
     "balanced-match": "^0.4.2",
     "color": "^1.0.3",
-    "eslint-config-doran": "^1.0.3",
     "postcss": "^5.2.6",
     "postcss-message-helpers": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^3.12.2",
+    "eslint-config-doran": "^1.0.3",
     "jest": "^18.0.0"
   },
   "scripts": {
