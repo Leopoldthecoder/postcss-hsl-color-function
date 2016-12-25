@@ -61,10 +61,8 @@ function transformColor(string, source) {
     return string
   }
   var index = match.index
-  var sassFn = match[2]
+  var hslFn = match[2]
 
-  // NOTE: regexp search beginning of line of non char symbol before `FUNCTION(`.
-  //       Offset used for second case.
   index = index === 0 ? index : index + 1
 
   var fn = string.slice(index)
@@ -74,6 +72,6 @@ function transformColor(string, source) {
   }
 
   return string.slice(0, index) +
-    functions[sassFn].apply(null, balancedMatches.body.split(/,(?![^\(]*\))/)) +
+    functions[hslFn].apply(null, balancedMatches.body.split(/,(?![^\(]*\))/)) +
     transformColor(balancedMatches.post, source)
 }

@@ -1,9 +1,8 @@
 var postcss = require('postcss')
-
 var plugin = require('./')
 
 function run(input, output) {
-  return postcss([plugin()]).process(input).then(result => {
+  return postcss([plugin()]).process(input).then(function(result) {
     expect(result.css).toEqual(output)
     expect(result.warnings().length).toBe(0)
   })
