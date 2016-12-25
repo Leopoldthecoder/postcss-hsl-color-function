@@ -1,6 +1,6 @@
 {
   "name": "postcss-hsl-color-function",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "PostCSS plugin to transform HSL color function to more compatible CSS.",
   "keywords": [
     "postcss",
