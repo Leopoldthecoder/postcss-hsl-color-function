@@ -1,6 +1,7 @@
-# PostCSS Hsl Color Function
+# PostCSS HSL Color Function
 
 [PostCSS] plugin to transform HSL color function to more compatible CSS.
+
 Inspired and modified from [postcss-sass-color-functions].
 
 [PostCSS]: https://github.com/postcss/postcss
