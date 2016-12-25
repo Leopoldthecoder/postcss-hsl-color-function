@@ -35,6 +35,7 @@ function toSimpleColor(color) {
 }
 
 var functionsRegex = new RegExp(
+  '(^|[^\\w\\-])' +
   '(' +
   Object.keys(functions).reduce(function(prev, curr) {
     return (prev ? prev + '|' : '') + curr
@@ -60,7 +61,7 @@ function transformColor(string, source) {
     return string
   }
   var index = match.index
-  var sassFn = match[1]
+  var sassFn = match[2]
 
   // NOTE: regexp search beginning of line of non char symbol before `FUNCTION(`.
   //       Offset used for second case.

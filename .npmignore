@@ -1,7 +1,9 @@
 .gitignore
-.editorconfig
+.eslintrc
 
 node_modules/
 npm-debug.log
 
 *.test.js
+yarn.lock
+release.sh
